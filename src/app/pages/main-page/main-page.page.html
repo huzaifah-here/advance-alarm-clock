@@ -1,31 +1,35 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-title>Yo</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content>
-
-
-  <ion-card>
-    <ion-card-header>
+<ion-content class="main-page" style="padding:10%">
+<div class="circle">
+  9:00
+</div>
+  <ion-card class="card">
+    <!-- <ion-card-header>
       <ion-card-title>Card Title</ion-card-title>
       <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-    </ion-card-header>
+    </ion-card-header> -->
 
     <ion-card-content>
-      Here's a small text description for the card content. Nothing more, nothing less.
-
-
+      <div>
+        <div style="display: flex; justify-content: space-between; font-size: large; font-weight: 400; color: black;">
+          6:00 am
+          <ion-toggle></ion-toggle>
+        </div>
+        <div style="font-size: 10px;">
+          <span>M </span><span>T </span><span>W </span><span>T </span><span>F </span><span>S </span> <span>S </span>
+        </div>
+      </div>
     </ion-card-content>
   </ion-card>
 
-  <ion-footer>
-    <ion-fab>
-      <ion-fab-button>
-        <ion-icon name="add"></ion-icon>
-      </ion-fab-button>
-    </ion-fab>
-  </ion-footer>
 </ion-content>
-
+<div style="display: flex; justify-content: center; padding-bottom: 10%;">
+  <ion-fab-button>
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+</div>
