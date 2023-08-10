@@ -11,5 +11,9 @@ export class MainPagePage implements OnInit {
 
   ngOnInit() {
   }
+  isDarkMode = false;
 
+  toggleDarkMode() {
+    this.isDarkMode = !this.isDarkMode;
+  }
 }

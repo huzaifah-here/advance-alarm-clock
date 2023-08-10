@@ -4,15 +4,19 @@
   </ion-toolbar>
 </ion-header> -->
 
-<ion-content class="main-page" style="padding:10%">
-<div class="circle">
-  9:00
-</div>
+<ion-content class="main-page" style="padding:10%" [ngClass]="{ 'dark-theme': isDarkMode }">
+  <div style="padding:10%">
+    <div style="display: flex; justify-content: center;">
+      <div class="circle">
+        <span class="circle-text">9:00</span>
+      </div>
+    </div>
+  </div>
+
+  <ion-button (click)="toggleDarkMode()">
+    Toggle Dark Mode
+  </ion-button>
   <ion-card class="card">
-    <!-- <ion-card-header>
-      <ion-card-title>Card Title</ion-card-title>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-    </ion-card-header> -->
 
     <ion-card-content>
       <div>
@@ -27,9 +31,9 @@
     </ion-card-content>
   </ion-card>
 
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
-<div style="display: flex; justify-content: center; padding-bottom: 10%;">
-  <ion-fab-button>
-    <ion-icon name="add"></ion-icon>
-  </ion-fab-button>
-</div>

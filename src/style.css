@@ -6,22 +6,15 @@
     /* Replace this with your desired background color */
 
 }
-
+.dark-theme {
+    --ion-background-color: #000000;
+    --ion-text-color: #ffffff;
+    /* Add other variables for dark mode as needed */
+  }
+  /* #3880ff Blue colr */
 .card {
     --ion-background-color: #ffffff;
     border-radius: 10px;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
-.circle {
-    height: 50%;
-    width: 50%;
-    background-color: red;
-    border-radius: 150px;
-    display: flex;
-    justify-content: center; /* Align text horizontally */
-    align-items: center; /* Align text vertically */
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-  }

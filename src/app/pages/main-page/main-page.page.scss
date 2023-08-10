@@ -1,0 +1,27 @@
+.fab-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10%;
+    position: sticky;
+    bottom: 0;
+  }
+
+  .circle {
+    position: relative;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    background-color: #3880ff;
+    width: 50%; /* Adjust the percentage value as needed */
+    padding-bottom: 50%; /* This maintains the aspect ratio (height = width) */
+    border-radius: 50%;
+  }
+  
+  .circle-text {
+    position: absolute;
+    top: 50%; /* Vertically center the text */
+    left: 50%; /* Horizontally center the text */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
