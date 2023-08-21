@@ -20,7 +20,7 @@
 
     <ion-card-content>
       <div>
-        <div style="display: flex; justify-content: space-between; font-size: large; font-weight: 400; color: black;">
+        <div style="display: flex; justify-content: space-between; font-size: large; font-weight: 400; ">
           6:00 am
           <ion-toggle></ion-toggle>
         </div>
@@ -31,7 +31,7 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed" [routerLink]="['/set-alarm']" ion-animate="fade-in">
     <ion-fab-button>
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
