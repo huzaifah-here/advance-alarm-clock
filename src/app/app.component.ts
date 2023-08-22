@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { SplashScreen } from '@capacitor/splash-screen'
+import { DarkModeService } from './services/dark-mode.service';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
-  constructor() {
+  // isDarkMode = false;
+  constructor(public darkmode:DarkModeService) {
     this.initializeApp();
   }
 
@@ -18,5 +20,9 @@ export class AppComponent {
         https://capacitor.ionicframework.com/docs/apis/splash-screen#hiding-the-splash-screen
     */
     SplashScreen.hide();
+  }
+  toggleDarkMode() {
+    // this.isDarkMode = !this.isDarkMode;
+    this.darkmode.toggleDarkMode();
   }
 }

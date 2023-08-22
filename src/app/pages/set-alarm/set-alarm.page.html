@@ -1,13 +1,35 @@
 <ion-header class="ion-no-border">
-  <ion-toolbar >
+  <ion-toolbar>
     <div style="display: flex; justify-content: space-between; padding: 10%;">
-      <ion-icon name="chevron-back-outline"></ion-icon>
-    
-      Done
+      <ion-icon (click)="return()" name="chevron-back-outline"></ion-icon>
+      <span (click)="saveAlarm()">
+        Done
+      </span>
     </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <div style="display: flex; justify-content: center; font-size: 32px; gap: 10%;">
+    <span
+      (touchstart)="onHourTouchStart()"
+      (touchend)="onHourTouchEnd()"
+      (touchcancel)="onHourTouchEnd()"
+    >
+      {{ selectedHours }}
+    </span>
+    <span>:</span>
+    <span
+      (touchstart)="onMinuteTouchStart()"
+      (touchend)="onMinuteTouchEnd()"
+      (touchcancel)="onMinuteTouchEnd()"
+    >
+      {{ selectedMinutes | number: '2.0' }}
+    </span>
+  </div>
 
+  <ion-card style="background-color: white;">
+fasd
+  </ion-card>
+  
 </ion-content>
